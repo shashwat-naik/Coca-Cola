@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #0d0d0d;
+}
+
+#nav {
+    height: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+
+#nav-prt2 {
+    display: flex;
+    width: 55%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h1 {
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
+#nav i {
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#nav h5 {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+#nav img {
+    cursor: pointer;
+    height: 45px;
+}
+
+#line {
+    width: 80px;
+    height: 2px;
+    background-color: red;
+}
+
+#content {
+    height: calc(100% - 140px);
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+#left {
+    width: 36%;
+    height: 100%;
+    padding: 100px 100px;
+}
+
+#right {
+    width: 36%;
+    height: 100%;
+    padding: 200px 140px;
+}
+
+#center {
+    width: 26%;
+    height: 100%;
+    padding-top: 60px;
+}
+
+#left h1 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+#left h1 span {
+    color: red;
+    font-weight: 550;
+}
+
+#left p {
+    margin-bottom: 40px;
+    font-size: 15px;
+    width: 70%;
+    line-height: 24px;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 45%;
+}
+
+#left button {
+    background-color: red;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    cursor: pointer;
+}
+
+#left button i {
+    margin-right: 6px;
+}
+
+#like {
+    font-size: 25px;
+    font-weight: 100;
+    color: red;
+    cursor: pointer;
+}
+
+#center-bg {
+    background-color: lightblue;
+    width: 100%;
+    height: 85%;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    background-image: url(https://www.coca-cola.com/content/dam/onexp/xf/en/homepage/carousel/ar_coca-cola_header05_desktop_coca-cola-acquires-costa-coffee_1440x810_v1.jpg);
+    background-size: 200%;
+    background-position: 35% 40%;
+    filter: blur(3px);
+}
+
+/* changed from here */
+#cola {
+    height: 100%;
+    position: absolute;
+    left: 49%;
+    z-index: 98;
+    transform: translate(-50%, 0);
+    animation: updown 2s ease-in-out alternate infinite;
+}
+
+.float-comment {
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #ffffff;
+    z-index: 150;
+    box-shadow: rgba(131, 131, 131, 0.35) 0px 5px 15px;
+}
+
+#pic {
+    width: 40px;
+    height: 40px;
+    background-color: #f5403a;
+    border-radius: 50%;
+    margin-left: -18px;
+}
+
+.pixone {
+    background-image: url(https://images.unsplash.com/photo-1533488069324-f9265c15d37f?q=80&w=1890&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+.pixtwo {
+    background-image: url(https://images.unsplash.com/photo-1617817637278-c8bb343a4999?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+.float-comment h1 {
+    font-size: 0.7vw;
+    color: rgb(121, 121, 121);
+    font-weight: 500;
+    letter-spacing: 0.7px;
+
+}
+
+.float-comment h1 span {
+    font-weight: 600;
+    color: #333;
+
+}
+
+#lock {
+    position: absolute;
+    top: -20%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    color: #f5403a;
+    font-size: 13px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#lft-float {
+    position: absolute;
+    bottom: 30%;
+    left: 530px;
+}
+
+#rght-float {
+    position: absolute;
+    top: 40%;
+    right: 500px;
+}
+
+#scroll {
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    z-index: 99;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.2s;
+    animation: down 2s ease-in-out alternate infinite;
+}
+
+#scroll:hover {
+    background-color: #f5403a;
+    border: none;
+    cursor: pointer;
+}
+
+/* till here */
+#right-elems {
+    bottom: 90%;
+    width: 350px;
+}
+
+#elem1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 1px solid #dadada;
+    opacity: 0.6;
+}
+
+#elem1 h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#elem1 i {
+    font-size: 24px;
+}
+
+#elem2 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+#elem2 p {
+    font-size: 12px;
+    width: 70%;
+    opacity: 0.7;
+}
+
+
+@keyframes updown {
+    from {
+        top: -30px;
+    }
+
+    to {
+        top: -50px;
+    }
+
+}
+
+@keyframes down {
+    from {
+        bottom: 70px;
+    }
+
+    to {
+        bottom: 50px;
+
+    }
+}
